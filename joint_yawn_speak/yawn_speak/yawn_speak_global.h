@@ -1,0 +1,12 @@
+#ifndef YAWN_SPEAK_GLOBAL_H
+#define YAWN_SPEAK_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(YAWN_SPEAK_LIBRARY)
+#  define YAWN_SPEAKSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define YAWN_SPEAKSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // YAWN_SPEAK_GLOBAL_H
